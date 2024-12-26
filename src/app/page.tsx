@@ -1,4 +1,4 @@
-import { Comment } from "@/components/comment";
+// import { Comment } from "@/components/comment";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <hr className="w-1/2 mx-auto border-b-2 border-b-gray-300 py-6"/>
-      <Comment />
+      {/* <Comment /> */}
       <hr className="w-1/2 mx-auto border-b-2 border-b-gray-300 py-6"/>
       <Footer />
     </main>
