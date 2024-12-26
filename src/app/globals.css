@@ -2,32 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+    width: 100%;
+    max-width: 1200px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#image{
+ 
+    background-image: url(/images/palao.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    aspect-ratio: 1/.66;
+    animation: changeImage 12s ease-in-out infinite;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@keyframes changeImage {
+    25%{
+        background-image: url(/images/biryani.jpg);
+    }
+    50%{
+        background-image: url(/images/nihari.jpg);
+    }
+    75%{
+        background-image: url(/images/palao.jpg);
+    }
+    100%{
+        background-image: url(/images/sajji.jpg);
+    }
 }
+

@@ -1,0 +1,7 @@
+[{
+   
+    "id": 1,
+    "name": "biryani",
+    "email": "quia et suscit architecto"
+  }
+]
