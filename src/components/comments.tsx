@@ -24,7 +24,7 @@ export const Comments: FC = () => {
       <div className="show-comments">
       <h1 className="text-2xl font-bold mb-4">Comments:</h1>
       {commentsList.map((comment, key:number)=>{
-        return <div className="capitalize">
+        return <div className="capitalize" key={key}>
         <ShowComments  task={comment} key={key} /><hr className=" mx-auto border border-gray-300 my-1"/>
         </div>
       })}
